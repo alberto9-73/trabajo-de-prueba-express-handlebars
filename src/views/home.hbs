@@ -1,9 +1,19 @@
 
 <h1>Hola Alberto</h1>
 <h3>contenido de home</h3>
-<ul>
+<ul><h3>habilidades</h3>
     {{#each tareas}}
    <li>Hacer: {{this}}</li>   
 {{/each}}
 </ul>
 
+{{#if isAdmin}}
+   
+<button>ingresar</button>
+{{else}}
+   <p>no valido</p>
+   
+{{/if}}
+
+     
+   

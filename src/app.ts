@@ -10,18 +10,20 @@ app.set('view engine', '.hbs');
 app.set('views', path.join(__dirname,'views'));
 
 app.get('/', (req, res) => {
-    const tareas=['jugar','Estudiar','Cosinar','Dormir']
+    const tareas=['jugar','Estudiar','Cosinar','Dormir','manejar','reparar']
     res.render('home',{
         tareas, 
-        isAdmin:false});
+        isAdmin:true});
 });
 app.get('/lista', (req, res) => {
     
-    res.render('lista',{
+    res.render('lista', {
         nombre:'Alberto',
         apellido:'Gonzalez',
         profecion:'laburante',
-    });
+        isAdmin:false,
+        layout:false
+       });
 });
 
 
