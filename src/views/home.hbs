@@ -1,9 +1,10 @@
 
-<h1>Hola Alberto</h1>
-<h3>contenido de home</h3>
+<h1>Me llamo {{nombre}}, trabajo en este proyecto</h1>
+<h3>¿Te puedo ayudar?</h3>
+
 <ul><h3>habilidades</h3>
     {{#each tareas}}
-   <li>Hacer: {{this}}</li>   
+   <li>Se hacer: '{{this}}'</li>   
 {{/each}}
 </ul>
 
@@ -11,7 +12,7 @@
    
 <button>ingresar</button>
 {{else}}
-   <p>no valido</p>
+      <p>  no valido  </p>
    
 {{/if}}
 

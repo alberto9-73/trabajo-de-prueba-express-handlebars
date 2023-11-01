@@ -12,8 +12,12 @@ app.set('views', path.join(__dirname,'views'));
 app.get('/', (req, res) => {
     const tareas=['jugar','Estudiar','Cosinar','Dormir','manejar','reparar']
     res.render('home',{
+        nombre:'Alberto',
+        apellido:'Gonzalez',
+        profecion:'laburante',
         tareas, 
-        isAdmin:true});
+        //isAdmin:true
+    });
 });
 app.get('/lista', (req, res) => {
     
@@ -22,8 +26,14 @@ app.get('/lista', (req, res) => {
         apellido:'Gonzalez',
         profecion:'laburante',
         isAdmin:false,
-        layout:false
+       // layout:false
        });
+});
+app.get('/log', (req, res) => {
+    
+    res.render('log',{
+       
+        layout:false});
 });
 
 
