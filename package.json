@@ -1,0 +1,19 @@
+{
+  "name": "trabajo-de-prueba-express-handlebars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.20",
+    "@types/node": "^20.8.9",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "ts-node": "^10.9.1"
+  }
+}
